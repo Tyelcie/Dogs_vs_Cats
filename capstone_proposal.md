@@ -5,7 +5,7 @@
 
 ### 背景
 
-In this section, provide brief details on the background information of the domain from which the project is proposed. Historical information relevant to the project should be included. It should be clear how or why a problem in the domain can or should be solved. Related academic research should be appropriately cited in this section, including why that research is relevant. Additionally, a discussion of your personal motivation for investigating a particular problem in the domain is encouraged but not required.
+2013年，kaggle举办了一项趣味性赛事“猫狗大战”，即猫狗图像分类。许多学者及行业人士参与其中，供献了大量的解决方案，机器学习领域的局势由之改变。现今图像分类在许多行业已展开深入研究，如医学上热门的癌组织与良性组织的鉴别，甚至有学者尝试利用深度学习方法鉴别出男女大脑MRI图像的差异，都是类似的二分类问题。但医学领域常由于患者隐私保护政策，难以获得大量的训练数据，所以为了更好地学习、研究新的方法，许多学者会利用猫狗大战数据进行探索测试。
 
 ### 问题描述
 _(approx. 1 paragraph)_
