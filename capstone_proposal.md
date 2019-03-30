@@ -12,21 +12,24 @@
 区分图片是猫还是狗的照片，是一个明显的二分类问题，通过输入图像特征，获得一个概率，通过概率来判断属于哪一个类。
 
 ### 数据输入
-_(approx. 2-3 paragraphs)_
 
 该数据集已切分为训练集和测试集。训练集包含25000张图片，猫和狗图片比例为1:1，可以从文件名（*标签.编号.jpg*）中获得标签；测试集有12500张图片，文件名只有编号。
 
-训练集图片会经过随机旋转、缩放、裁剪等预处理，使模型能够泛化。这些图像将统一为hh \times ww大小，并分解为RGB三个颜色通道的色值，再经过标准化处理，作为模型的输入。
-this section, the dataset(s) and/or input(s) being considered for the project should be thoroughly described, such as how they relate to the problem and why they should be used. Information such as how the dataset or input is (was) obtained, and the characteristics of the dataset or input, should be included with relevant references and citations as necessary It should be clear how the dataset(s) or input(s) will be used in the project and whether their use is appropriate given the context of the problem.
+训练集图片会经过随机旋转、缩放、裁剪等预处理，使模型能有更好的泛化能力。这些图像将统一为hh \times ww大小，并分解为RGB三个颜色通道的色值，再经过标准化处理，作为模型的输入。
 
 ### 解决方案
 _(approx. 1 paragraph)_
 
-In this section, clearly describe a solution to the problem. The solution should be applicable to the project domain and appropriate for the dataset(s) or input(s) given. Additionally, describe the solution thoroughly such that it is clear that the solution is quantifiable (the solution can be expressed in mathematical or logical terms) , measurable (the solution can be measured by some metric and clearly observed), and replicable (the solution can be reproduced and occurs more than once).
+处理好输入数据后，将采用一个预训练的神经网络进行迁移学习，预计将采用vgg16模型。神经网络的输入节点应为 hh \times ww 大小，输出为1，采用sigmoid激活函数获得图片指向某一类的概率（狗=1，猫=0）。最后将模型在测试集上进行预测，提交到kaggle上进行比较判断。模型的训练目标即是达到kaggle的前10%。
+
+训练模型的过程中，将调整epoch、隐藏层节点、学习速率等超参数，以尽量高准确率，降低Loss.
+
+附：sigmoid函数公式
 
 ### 基准模型
 _(approximately 1-2 paragraphs)_
 
+没有基准模型。
 In this section, provide the details for a benchmark model or result that relates to the domain, problem statement, and intended solution. Ideally, the benchmark model or result contextualizes existing methods or known information in the domain and problem given, which could then be objectively compared to the solution. Describe how the benchmark model or result is measurable (can be measured by some metric and clearly observed) with thorough detail.
 
 ### 评估指标
