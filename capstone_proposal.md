@@ -16,7 +16,7 @@ _(approx. 2-3 paragraphs)_
 
 该数据集已切分为训练集和测试集。训练集包含25000张图片，猫和狗图片比例为1:1，可以从文件名（*标签.编号.jpg*）中获得标签；测试集有12500张图片，文件名只有编号。
 
-图片会经过预处理，得到RGB三个颜色通道的色值，再经过标准化处理，作为模型的输入。s
+训练集图片会经过随机旋转、缩放、裁剪等预处理，使模型能够泛化。这些图像将统一为hh \times ww大小，并分解为RGB三个颜色通道的色值，再经过标准化处理，作为模型的输入。
 this section, the dataset(s) and/or input(s) being considered for the project should be thoroughly described, such as how they relate to the problem and why they should be used. Information such as how the dataset or input is (was) obtained, and the characteristics of the dataset or input, should be included with relevant references and citations as necessary It should be clear how the dataset(s) or input(s) will be used in the project and whether their use is appropriate given the context of the problem.
 
 ### 解决方案
