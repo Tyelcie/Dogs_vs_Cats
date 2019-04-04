@@ -3,7 +3,7 @@ title: "test"
 author: "yufree"
 output:
     pdf_document:
-        keep_tex: yes
+        keep_tex: no
             latex_engine: xelatex
 html_document: default
 word_document: default
