@@ -1,6 +1,6 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2019.3.31)  4 APR 2019 08:51
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2019.3.31)  4 APR 2019 20:19
 entering extended mode
-**Captone_proposal.tex
+**Capstone_proposal.tex
 (E:\Python\MLND\Dogs_vs_Cats\Capstone_proposal.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
@@ -524,4 +524,4 @@ s
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining document command \fakesuperscript with arg. spec. 'm' on line 22
+. Defining document command \fakesuperscript with arg. spec. 'm' on line 2
