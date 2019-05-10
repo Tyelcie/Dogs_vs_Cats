@@ -1,3 +1,5 @@
 
 *.jpg
 sample_submission.csv
+*.h5
+submission.csv
