@@ -5,3 +5,4 @@ sample_submission.csv
 base - 副本.txt
 *.png
 models/history *.txt
+submission*
