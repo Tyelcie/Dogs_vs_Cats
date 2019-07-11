@@ -1,9 +1,8 @@
 
 *.jpg
-sample_submission.csv
 *.h5
 base - 副本.txt
 *.png
 models/history *.txt
-submission*
+*.csv
 
